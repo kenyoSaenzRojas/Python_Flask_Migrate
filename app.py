@@ -6,7 +6,7 @@ from flask_migrate import Migrate #Es la ingnorancia de las migraciones
 #Crear una instancias
 app = Flask(__name__)  
 
-app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql://postgres:SQLkenyo90@localhost:5432/db_blogs_flask'
+app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql://postgres:root@localhost:5432/db_blogs_flask'
 #vamos a ejecutar SQLAlchemy
 db.init_app(app)
 migrate = Migrate(app, db)
